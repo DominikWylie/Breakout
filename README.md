@@ -21,7 +21,7 @@ Fixed * Fix the compiler issues in the code
 
 ## Suggested tasks
 
-* Implement mouse input for pad
+added * Implement mouse input for pad
 * Improved VFX (ball trail, paddle hit response, brick particle destruction)
 * Better UI (progress bar rather than timer for countdown).
 * GameLoop
