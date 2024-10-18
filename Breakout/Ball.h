@@ -1,10 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-
+#include "BallTrail.h"
 
 class GameManager;  // forward declaration
-
-
 
 class Ball {
 public:
@@ -29,5 +27,7 @@ private:
 
     static constexpr float RADIUS = 10.0f;      
     static constexpr float VELOCITY = 350.0f;   // for reference.
+
+    BallTrail trail;
 };
 

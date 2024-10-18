@@ -4,6 +4,7 @@
 Ball::Ball(sf::RenderWindow* window, float velocity, GameManager* gameManager)
     : _window(window), _velocity(velocity), _gameManager(gameManager),
     _timeWithPowerupEffect(0.f), _isFireBall(false), _isAlive(true), _direction({1,1})
+    ,trail(window, RADIUS)
 {
     _sprite.setRadius(RADIUS);
     _sprite.setFillColor(sf::Color::Cyan);
@@ -90,11 +91,14 @@ void Ball::update(float dt)
     {
         _direction.y *= -1; // Bounce vertically
     }
+
+    trail.update(dt, _sprite.getPosition());
 }
 
 void Ball::render()
 {
     _window->draw(_sprite);
+    trail.render();
 }
 
 void Ball::setVelocity(float coeff, float duration)
