@@ -11,13 +11,13 @@ public:
 
     void moveLeft(float dt);
     void moveRight(float dt);
+    void moveWithMouse();
     void update(float dt);
     void render();
     sf::FloatRect getBounds() const;
     void setWidth(float coeff, float duration);
 
 private:
-
 
     sf::RenderWindow* _window;
     sf::RectangleShape _sprite;

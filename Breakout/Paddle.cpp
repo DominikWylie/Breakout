@@ -33,6 +33,17 @@ void Paddle::moveRight(float dt)
     }
 }
 
+void Paddle::moveWithMouse()
+{
+    // get the current mouse position in the window
+    sf::Vector2i pixelPos = sf::Mouse::getPosition();
+
+    // convert it to world coordinates
+    sf::Vector2f worldPos = _window->mapPixelToCoords(pixelPos);
+
+    _sprite.setPosition(sf::Vector2f(worldPos.x - _window->getPosition().x - (_sprite.getSize().x / 2), _sprite.getPosition().y));
+}
+
 void Paddle::update(float dt)
 {
     if (_timeInNewSize > 0)
