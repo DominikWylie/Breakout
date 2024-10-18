@@ -17,7 +17,7 @@ fire ball (green)
 
 ## Suggested fixes
 
-* Fix the compiler issues in the code
+Fixed * Fix the compiler issues in the code
 
 ## Suggested tasks
 
