@@ -22,7 +22,7 @@ Fixed * Fix the compiler issues in the code
 ## Suggested tasks
 
 added * Implement mouse input for pad
-* Improved VFX (ball trail, paddle hit response, brick particle destruction)
+added * Improved VFX (ball trail, paddle hit response, brick particle destruction)
 * Better UI (progress bar rather than timer for countdown).
 * GameLoop
 * Better ball physics (Box2D)
@@ -33,3 +33,7 @@ added * Implement mouse input for pad
 
 # Time Details and Changelist
 <Add information to this section about the time you've taken for this task along with a professional changelist.>
+
+fix compiler issue - 30 mins
+add mouse input - 1hr
+add fire effect - 1.5hr

@@ -97,8 +97,8 @@ void Ball::update(float dt)
 
 void Ball::render()
 {
-    _window->draw(_sprite);
     trail.render();
+    _window->draw(_sprite);
 }
 
 void Ball::setVelocity(float coeff, float duration)

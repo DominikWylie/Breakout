@@ -1,7 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <stdlib.h>
+#include <time.h>
 
-#define PARTICLEAMOUNT 10
+#define PARTICLEAMOUNT 70
 
 class BallTrail
 {
@@ -24,7 +26,13 @@ private:
 	sf::Vector2f ballLocation = sf::Vector2f(0, 0);
 
 	int currentParticle = 0;
-	float particleFrequencySeconds = 0.1f;
+	float particleFrequencySeconds = 0.01f;
 	float timePassedSinceLastParticle = 0.f;
+
+	float gravityMultiplier = -0.05f;
+	float jitterMultiplier = 0.05f;
+	int fadeframeStutter = 0, framesForStutterElapped = 0;
+
+	sf::Color defautColor = sf::Color::White;
 };
 
